@@ -2,8 +2,8 @@
 /uploads
 /cache
 node_modules
-bower_components
 build
+bower_components
 npm-debug.log
 /w3tc-config
 db.php
