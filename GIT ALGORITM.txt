@@ -1,0 +1,18 @@
+/
+git init
+git add .
+git commit -m"INIT"
+
+/.git
+git remote add origin https://bogdanmelnik@bitbucket.org/bogdanmelnik/bitcoin-roulette.git
+git push -u origin --all
+
+/
+git push
+git pull (optional)
+
+
+__________________________________
+
+
+git clone https://bogdanmelnik@bitbucket.org/bogdanmelnik/bitcoin-roulette.git
