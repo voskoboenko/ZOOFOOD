@@ -1,0 +1,52 @@
+.brand
+  .section-title
+    font-size: 30px
+    text-align: center
+    font-family: 'RobotoMedium'
+    margin-bottom: 30px
+  .brands-block
+    .brands-header-container 
+      margin-bottom: 70px
+      @media(max-width: 767px)
+        overflow-x: scroll
+        overflow-y: visible
+    .brands-header
+      display: flex
+      min-width: 600px
+        
+      a
+        transition-duration: 0.5s
+        padding-top: 10px
+        padding-bottom: 10px
+        text-align: center
+        border: 1px solid #e8e8e8
+        color: $orange
+        font-size: 16px
+        font-family: 'RobotoBold'
+        width: 100%
+        &:hover
+          background: $orange
+          color: white
+          text-decoration: none
+    .brands-body
+      .letter
+        font-size: 30px
+        font-family: 'RobotoBold'
+    .brand-links
+      margin-bottom: 30px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      a
+        transition-duration: 0.5s
+        font-size: 15px
+        padding-bottom: 10px
+        margin-bottom: 5px
+        display: inline-block
+        border-bottom: 1px solid transparent
+        color: grey
+        &:hover
+          color: $orange
+          border-bottom: 1px solid $orange
+          text-decoration: none
+          

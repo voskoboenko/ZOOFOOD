@@ -1,0 +1,140 @@
+.category
+  .allCategories
+    line-height: 14px
+    border: none
+    background: transparent
+    position: fixed
+    bottom: 0
+    right: 0
+    background: $orange
+    color: white
+    width: 100px
+    height: 100px
+    border-radius: 100px
+    z-index: 1000
+    opacity: 0.7
+    transition-duration: 0.5s
+    display: none
+    &:hover
+      opacity: 1
+    @media(max-width: 767px)
+      display: block
+  .categories-container
+    @media(max-width: 767px)
+      position: fixed
+      top: 0
+      left: 0
+      overflow-x: hidden
+      width: 100%
+      right: 0
+      bottom: 0
+      background: white
+      transition-duration: 1s
+      z-index: 1000
+    &.collapse-categories
+      width: 0%
+    .closeButton
+      background: none
+      border:  none
+      font-size: 40px
+      color: $orange
+      position: absolute
+      top: 0px
+      right: 0px
+      display: none
+      @media(max-width: 767px)
+        display: block
+    .categories
+      padding-left: 15px
+      width: 300px
+      padding-top: 10px
+      &-title
+        font-size: 20px
+        color: $orange
+        margin-bottom: 30px
+        font-family: 'RobotoBold'
+      &-list
+        margin-bottom: 40px
+        &-title
+          font-size: 18px
+          font-family: 'RobotoMedium'
+          margin-bottom: 20px
+        ul
+          li
+            a
+              color: black
+              font-size: 14px
+              span
+                padding-left: 3px
+                color: #959595
+  &-header
+    margin-bottom: 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    &-element
+      display: flex
+      align-items: center
+      justify-content: space-between
+      @media(max-width: 767px)
+        flex-wrap: wrap
+      .category-title
+        font-size: 30px
+        font-family: 'RobotoBold'
+        margin-right: 15px
+        @media(max-width: 767px)
+          font-size: 23px
+      .results
+        font-size: 14px
+        color: #999999
+    .sortBy
+      label
+        font-size: 14px
+        color: #999999
+        margin-right: 15px
+      select
+        font-size: 13px
+        width: 180px
+        height: 40px
+        padding-left: 10px
+        color: #999999
+        border-radius: 5px
+  .pagination
+    margin-top: 70px
+    justify-content: center
+    @media(max-width: 575px)
+      margin-top: 20px
+    a
+      color: $green
+      border: 1px solid #d4d4d4
+      border-radius: 5px
+      display: flex
+      align-items: center
+      justify-content: center
+      &.prev
+        margin-right: 10px
+        width: 80px
+        height: 40px
+        font-size: 14px
+        @media(max-width: 575px)
+          font-size: 12px
+        i
+          padding-right: 5px
+          font-size: 12px
+      &.next
+        margin-left: 10px
+        width: 80px
+        font-size: 14px
+        height: 40px
+        @media(max-width: 575px)
+          font-size: 12px
+        i
+          padding-left: 5px
+          font-size: 12px
+      &.number
+        height: 40px
+        width: 40px
+        margin: 0 5px
+        @media(max-width: 575px)
+          font-size: 12px

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project</title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+  <main>
+    <section class="checkOut">
+      <div class="checkOut-left">
+        <div class="content">
+          <img src="img/logo.png" class="logo img-fluid" alt="#">
+          <form action="#">
+            <div class="input-container">
+              <label for="email">Customer information</label>
+              <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input-container">
+              <label for="address">Shipping address</label>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" placeholder="First Name" id="address">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="First Name">
+                </div>
+                <div class="col-md-7">
+                  <input type="text" placeholder="Street Address" id="address">
+                </div>
+                <div class="col-md-5">
+                  <input type="text" placeholder="Apt / Suite / Other (optional)">
+                </div>
+                <div class="col-12">
+                  <input type="text" placeholder="City">
+                </div>
+                <div class="col-md-6">
+                  <select placeholder="Select a state">
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                    <option value="#">State</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Postal code">
+                </div>
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="email">Your Payment Information</label>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-12"><input type="text" placeholder="Card Number"></div>
+                    <div class="col-md-6">
+                      <select placeholder="Exp. Month">
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                        <option value="#">Month</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <select placeholder="Exp. Year">
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                        <option value="#">1999</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input type="text" placeholder="Cardholder Name">
+                    </div>
+                  </div>
+                  <p class="as">(as it appears on your credit card)</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="weAccept">
+                    <div class="title">We accept</div>
+                    <div class="cards">
+                      <img src="img/card1.png" class="img-fluid" alt="#">
+                      <img src="img/card2.png" class="img-fluid" alt="#">
+                      <img src="img/card3.png" class="img-fluid" alt="#">
+                      <img src="img/card4.png" class="img-fluid" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="input-container">
+                    <label for="radio1">Billing address</label>
+                    <div class="radio">
+                      <input name="billing" id="radio1" type="radio">
+                      <label for="radio1">Same as shipping address</label>
+                    </div>
+                    <div class="radio">
+                      <input name="billing" id="radio2" type="radio">
+                      <label for="radio2">Use a different billing address</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="button2">Submit Order</button>
+            </div>
+          </form>
+          <footer>
+            <div class="copyright">© DogFood. All Rights Reserved.</div>
+          </footer>
+        </div>
+      </div>
+      <div class="checkOut-right">
+        <div class="content">
+          <div class="product-price">
+            <div class="product">
+              <div class="product-img">
+                <img src="img/product.png" class="img-fluid" alt="#">
+              </div>
+              <div class="product-text">
+                <div class="name">American Journey</div>
+                <div class="qty">Qty: 1</div>
+              </div>
+            </div>
+            <div class="price">$25.99</div>
+          </div>
+          <div class="sub">
+            <div class="sub-element">
+              <div class="name">Subtotal</div>
+              <div class="price">$25.99</div>
+            </div>
+            <div class="sub-element">
+              <div class="name">Shipping</div>
+              <div class="price">-</div>
+            </div>
+          </div>
+          <div class="total">
+            <div class="name">Total</div>
+            <div class="price">$25.99</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+	<script src="js/main.js"></script>		
+</body>
+</html>

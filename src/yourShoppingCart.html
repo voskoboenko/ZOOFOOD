@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project</title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+  //= tamplate/header.html
+  <main>
+    <section class="header-links">
+      <div class="container">
+        <a href="index.html">Home</a>
+        -
+        <a href="index.html">Your Shopping Cart</a>
+      </div>
+    </section>
+    <section class="yourShoppingCart">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-7">
+            <div class="yourShoppingCart-1 clearfix">
+              <button class="close"><i class="fas fa-times"></i></button>
+              <div class="shoppingCart clearfix">
+                <img src="img/product.png" class="img-fluid shoppingCart-img" alt="#">
+                <div class="shoppingCart-text">
+                  <div class="name">American Journey</div>
+                  <div class="price">
+                    <span class="new">$25.99</span>
+                    <span class="old">$30.50</span>
+                  </div>
+                  <div class="size">Size 12-lb bag</div>
+                </div>
+              </div>
+              <div class="quantity">
+                <input type="number" min="1" max="9" step="1" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <div class="yourShoppingCart-2">
+              <button class="checkout">Proceed to checkout</button>
+              <div class="info">
+                <div class="el1">Subtotal (1 items): </div>
+                <div class="el2">$25.99</div>
+              </div>
+              <div class="info">
+                <div class="el1">Flat-Rate Shipping:</div>
+                <div class="el2">Free</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  //= tamplate/footer.html
+	<script src="js/main.js"></script>		
+</body>
+</html>

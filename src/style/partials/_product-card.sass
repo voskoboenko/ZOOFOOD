@@ -1,0 +1,139 @@
+.product
+  margin-bottom: 95px
+  .col-xl-1
+    display: flex
+    .images-nav
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-around
+      @media(max-width: 575px)
+        flex-direction: row
+        flex-wrap: nowrap
+        margin-bottom: 20px
+      li
+        @media(max-width: 575px)
+          max-width: 100px
+        a
+          border: 1px solid transparent
+          border-radius: 5px
+          &.active
+            border: 1px solid rgb(222, 222, 222)
+  .col-lg-4
+    .product-img
+      div
+        text-align: center
+        img
+          margin: auto
+  &-text
+    @media(max-width: 767px)
+      padding-top: 15px
+    .title
+      font-size: 28px
+      font-family: 'RobotoBold'
+      @media(max-width: 575px)
+        font-size: 23px
+    .price
+      margin-bottom: 10px
+      .new
+        font-size: 25px
+        font-family: 'RobotoBold'
+        color: $orange
+      .old
+        font-size: 20px
+        font-family: 'RobotoMedium'
+        text-decoration: line-through
+        color: #adadad
+    .reviews
+      margin-bottom: 15px
+      display: flex
+      align-items: center
+      .stars
+        margin-right: 5px
+        i
+          font-size: 11px
+          color: $orange
+      &-quantity
+        font-size: 14px
+    &-text
+      font-size: 14px
+      color: #737373
+      margin-bottom: 30px
+    .size
+      margin-bottom: 30px
+      display: flex
+      align-items: center
+      @media(max-width: 575px)
+        flex-wrap: wrap
+      &-title
+        margin-right: 10px
+        font-size: 14px
+        color: #737373
+      .radios
+        display: flex
+        label
+          cursor: pointer
+          text-align: center
+          margin: 5px
+          font-size: 13px
+          border: 1px solid #e8e8e8
+          border-radius: 5px
+          padding: 10px 15px
+        input:checked+label
+          border: 1px solid $orange
+    .quantity-block
+      display: flex
+      align-items: center
+      @media(max-width: 575px)
+        flex-wrap: wrap
+      .quantity-title
+        font-size: 14px
+        margin-right: 10px
+        @media(max-width: 575px)
+          margin-bottom: 10px
+      .quantity
+        position: relative
+        margin-right: 10px
+        @media(max-width: 575px)
+          margin-bottom: 10px
+      button
+        border-radius: 5px
+        height: 40px
+        width: 120px
+        color: white
+        border: none
+        background: $orange
+        font-size: 14px
+        @media(max-width: 575px)
+          margin-bottom: 10px
+.product-information
+  margin-bottom: 45px
+  font-size: 14px
+  .nav-tabs
+    a
+      margin-right: 45px
+      font-size: 18px
+      color: #545454
+      font-family: 'RobotoMedium'
+      &:hover
+        text-decoration: none
+      &.active
+        color: $green
+        border-bottom: 4px solid $green
+  .tab-content
+    padding-top: 40px
+    .simple-text
+      color: #737373
+      margin-bottom: 35px
+    .title
+      font-family: 'RobotoMedium'
+      font-size: 18px
+      color: #545454
+      margin-bottom: 25px
+    .parameters
+      .parameter
+        color: #737373
+        span
+          color: #545454
+          font-family: 'RobotoMedium'

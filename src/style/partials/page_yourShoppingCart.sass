@@ -1,0 +1,113 @@
+.yourShoppingCart
+  &-1
+    margin-bottom: 20px
+    overflow: hidden
+    border: 1px solid #c4c4c4
+    border-radius: 5px
+    position: relative
+    padding-top: 20px
+    padding-bottom: 20px
+    @media(max-width: 575px)
+      padding-bottom: 0px
+    .close
+      position: absolute
+      top: 10px
+      right: 10px
+    .shoppingCart
+      padding-left: 40px
+      @media(max-width: 575px)
+        padding-left: 10px
+        margin-bottom: 20px
+      &-img
+        float: left
+        max-width: 70px
+      &-text
+        margin-left: 110px
+        padding-top: 15px
+        @media(max-width: 575px)
+          margin-left: 80px
+        .name
+          color: #545454
+          font-family: 'RobotoMedium'
+          margin-bottom: 5px
+        .price
+          margin-bottom: 5px
+          .new
+            font-size: 18px
+            font-family: 'RobotoBold'
+            color: $orange
+          .old
+            text-decoration: line-through
+            font-size: 14px
+            font-family: 'RobotoMedium'
+            color: #b2b2b2
+        .size
+          font-size: 12px
+          color: #b2b2b2
+    .quantity
+      position: absolute
+      bottom: -1px
+      right: -1px
+      width: 140px
+      @media(max-width: 575px)
+        position: relative
+        right: auto
+        left: -1px
+      input
+        width: 60px
+        font-size: 14px
+        padding-left: 0
+        text-align: center
+        margin: auto
+        border-radius: 0
+        border-left: none
+        border-right: none
+      input::-webkit-inner-spin-button, input::-webkit-outer-spin-button
+        appearance: none
+      &-nav
+      &-button
+        cursor: pointer
+        border: 1px solid #c4c4c4
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 40px
+        color: $orange
+        background: #fafafa
+        font-size: 25px
+        font-family: 'RobotoMedium'
+        &.quantity-up
+          right: 0
+          top: 0
+          bottom: 0
+        &.quantity-down
+          left: 0
+          top: 0
+          bottom: 0
+  &-2
+    padding: 20px
+    border: 1px solid #c4c4c4
+    border-radius: 5px
+    .checkout
+      height: 50px
+      color: white
+      font-size: 16px
+      font-family: 'RobotoMedium'
+      background: $orange
+      border: none
+      width: 100%
+      display: block
+      border-radius: 5px
+      margin-bottom: 15px
+    .info
+      font-family: 'RobotoMedium'
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .el1
+        font-size: 15px
+      .el2
+        font-size: 18px
+        width: 70px
+        color: $orange
